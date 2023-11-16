@@ -1,12 +1,14 @@
 <template>
   <div id="basicLayout">
     <a-layout style="height: 400px;">
-      <a-layout-header class="header">导航栏</a-layout-header>
+      <a-layout-header class="header">
+        <global-header />
+      </a-layout-header>
       <a-layout-content class="content">
         <router-view />
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="http://mabbit.cn" target="_blank">兔子洞</a>
+        <a href="http://mabbit.cn" target="_blank">枫兔家园</a>
       </a-layout-footer>
     </a-layout>
   </div>
@@ -36,3 +38,6 @@
       text-align: center;
   }
 </style>
+<script setup lang="ts">
+import GlobalHeader from "@/components/GlobalHeader.vue";
+</script>

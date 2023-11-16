@@ -2,15 +2,9 @@
   <div id="globalHeader">
     <a-menu mode="horizontal" :default-selected-keys="['1']">
       <a-menu-item key="0" :style="{ padding: 0, marginRight: '38px' }" disabled>
-        <div
-            :style="{
-            width: '80px',
-            height: '30px',
-            borderRadius: '2px',
-            background: 'var(--color-fill-3)',
-            cursor: 'text',
-          }"
-        />
+        <div class="title-bar">
+          <img class="logo" src="@/asserts/logo.png" alt="logo" title="logo"/>
+        </div>
       </a-menu-item>
       <a-menu-item key="1">Home</a-menu-item>
       <a-menu-item key="2">Solution</a-menu-item>
@@ -25,5 +19,11 @@
 </script>
 
 <style scoped>
+.title-bar {
 
+}
+
+.logo {
+
+}
 </style>
