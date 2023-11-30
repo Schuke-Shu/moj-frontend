@@ -8,6 +8,7 @@ export default {
         ({
             user: {
                 username: "未登录",
+              role: "noLogin",
             },
         }),
     // getters
